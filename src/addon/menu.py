@@ -57,7 +57,7 @@ def maybe_add_get_help_submenu(menu: QMenu) -> None:
 
 def get_anking_menu() -> QMenu:
     """Return AnKing menu. If it doesn't exist, create one. Make sure its submenus are up to date."""
-    menu_name = "&AnKing"
+    menu_name = "Theme"
     menubar = mw.form.menubar
     for a in menubar.actions():
         if menu_name == a.text():
