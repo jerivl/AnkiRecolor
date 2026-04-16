@@ -1,10 +1,8 @@
-from .ankiaddonconfig import ConfigManager 
-from . import colors 
-from colors import recolor_python, recolor_web 
+from .ankiaddonconfig import ConfigManager
+from .migrate import maybe_migrate_config
 
-conf = ConfigManager() 
-colors.recolor_python()
-colors.recolor_web()
+conf = ConfigManager()
 
+from . import colors
 from . import menu
 from . import config
